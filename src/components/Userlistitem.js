@@ -5,7 +5,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-export default function Listitem({ user }) {
+export default function Listitem({ user, count }) {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     axios
@@ -20,7 +20,7 @@ export default function Listitem({ user }) {
   };
   return (
     <tr className="text-center">
-      <td>{user.id}</td>
+      <td>{count}</td>
       <td>{user.name}</td>
       <td>
         <Link to={`/Edit/${user.id}`}>

@@ -27,7 +27,7 @@ export default function Profile() {
         </thead>
         <tbody>
           {users.map((user, i) => (
-            <Listitem user={user} key={i + 1} />
+            <Listitem user={user} key={i + 1} count={i + 1} />
           ))}
         </tbody>
       </Table>

@@ -23,7 +23,7 @@ const Teacherlist = () => {
         </thead>
         <tbody>
           {teachers.map((user, i) => (
-            <Userlistitem user={user} key={i + 1} />
+            <Userlistitem user={user} key={i + 1} count={i + 1} />
           ))}
         </tbody>
       </Table>

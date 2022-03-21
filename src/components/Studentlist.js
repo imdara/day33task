@@ -23,7 +23,7 @@ const Studentlist = () => {
         </thead>
         <tbody>
           {students.map((user, i) => (
-            <Userlistitem user={user} key={i + 1} />
+            <Userlistitem user={user} key={i + 1} count={i + 1} />
           ))}
         </tbody>
       </Table>
