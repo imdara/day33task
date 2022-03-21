@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.workspace {
+  color: #dc3545;
+}
+
+.dropdown-menu.show {
+  background-color: #dc3545;
+  border: none;
+}
+
+/* .dropdown-item.show:hover {
+  background-color: #dc3545;
+} */
